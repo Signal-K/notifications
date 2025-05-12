@@ -2,7 +2,7 @@
 
 export async function sendNotification(userIds: string[], message: string) {
   try {
-    const response = await fetch("https://starsailors.space/api/send-push", {
+    const response = await fetch("https://localhost:3001/api/send-push", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
